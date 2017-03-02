@@ -1,0 +1,17 @@
+.votes {
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.17);
+  display: inline-block;
+}
+
+.points {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.71);
+}
