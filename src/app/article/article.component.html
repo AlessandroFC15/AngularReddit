@@ -10,12 +10,11 @@
       {{ article.title }}
     </a>
 
-    <p>
-      <small> {{ article.link }}</small>
-    </p>
+    <!-- right here -->
+    <div class="meta">({{ article.domain() }})</div>
 
 
-    <div class="btn-group">
+    <div class="btn-group" style="margin-top: 15px">
       <button class="btn btn-info" (click)="article.upvote()">
         <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> Upvote
       </button>

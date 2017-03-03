@@ -6,6 +6,7 @@ import { AlertModule } from 'ng2-bootstrap';
 
 import { AppComponent } from './app.component';
 import { ArticleComponent } from './article/article.component';
+import { CurrencyMaskModule } from "ng2-currency-mask";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ArticleComponent } from './article/article.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    CurrencyMaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]

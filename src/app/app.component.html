@@ -38,13 +38,17 @@
             <input #link type="url" class="form-control" name="link">
           </div>
 
+          <div class="form-group">
+            <input [(ngModel)]="value" name="money" class="form-control" currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"/>
+          </div>
+
           <button (click)="addArticle(title, link)" class="btn btn-default">Submit link</button>
           <button (click)="title.value = ''; link.value = '';" class="btn btn-danger">Clear data</button>
         </form>
       </div>
     </div>
 
-    <app-article *ngFor="let article of articles" [article]="article"></app-article>
+    <app-article *ngFor="let article of sortedArticles()" [article]="article"></app-article>
   </div>
 </div>
 
